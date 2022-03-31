@@ -1,0 +1,37 @@
+<div class="container">
+    <h1 class="mat-display-2">Morpion</h1>
+    <div class="champ">
+        <p class="start current-status mat-display-1">Commencer une partie en appuyant sur le bouton !</p>
+    </div>
+
+    <div *ngIf="this.game.gameStatus === 0" class="champ d-flex justify-content-center">
+        <button (click)="startGame()" mat-raised-button color="accent" class="start">Commencer la partie !</button>
+    </div>
+
+    <div *ngIf="this.game.gameStatus === 1" class="plateau mt-5"> <!-- Cache la grille si le jeu n'est pas lancé-->
+        <div class="joueur joueur1 align-self-center">
+            Joueur 1
+        </div>
+        <div class="grille container-fluid">
+            <div class="row">
+                <div (click)="clickSubfield($event)" position="0" class="case col-4"></div>
+                <div (click)="clickSubfield($event)" position="1" class="case col-4"></div>  
+                <div (click)="clickSubfield($event)" position="2" class="case col-4"></div>    
+            </div>
+            <div class="row">
+                <div (click)="clickSubfield($event)" position="3" class="case col-4"></div>
+                <div (click)="clickSubfield($event)" position="4" class="case col-4"></div>  
+                <div (click)="clickSubfield($event)" position="5" class="case col-4"></div>    
+            </div>
+            <div class="row">
+                <div (click)="clickSubfield($event)" position="6" class="case col-4"></div>
+                <div (click)="clickSubfield($event)" position="7" class="case col-4"></div>  
+                <div (click)="clickSubfield($event)" position="8" class="case col-4"></div>    
+            </div>
+            
+        </div>
+        <div class="joueur joueur2 align-self-center">
+            Joueur 2
+        </div>
+    </div>
+</div>

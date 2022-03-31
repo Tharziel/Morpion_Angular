@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #444444; }
+h1{
+     color: whitesmoke;
+    text-align: center; 
+    margin :15px 0;
+}
+
+.field{
+    width: 100%;
+}
+
+.field p{
+    color: whitesmoke;
+}
+
+.player-one{
+    background: blue;
+}
+
+.player-two{
+    background: yellow;
+}

@@ -1,0 +1,28 @@
+p{
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+.rule{
+    margin-top: 100px;
+}
+
+@media (max-width: 992px){
+    h1{
+        font-size:50px;
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size:30px;
+    }
+
+    .rule{
+        margin-top: 10px;
+    }
+}

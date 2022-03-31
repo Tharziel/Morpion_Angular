@@ -1,0 +1,19 @@
+h1{
+    font-weight: 900;
+    text-align: center;
+}
+
+.navbar ol {
+    list-style-type: none;
+    padding-left: 10%;
+}
+
+.disp{
+    display: flex;
+    flex-direction: row;
+    
+}
+.space{
+    margin-left: 2px;
+    margin-right: 2px;
+}
